@@ -1,0 +1,64 @@
+2024-08-25 17:41:05 info: 123-task completed at-1724587865048
+2024-08-25 17:43:17 info: Server is running on port 3000
+2024-08-25 17:43:21 info: Task completed for user 123 at 25/8/2024, 5:43:21 pm
+2024-08-25 17:43:44 info: Task completed for user 123 at 25/8/2024, 5:43:44 pm
+2024-08-25 17:43:45 warn: Rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:43:46 info: Task completed for user 123 at 25/8/2024, 5:43:46 pm
+2024-08-25 17:43:46 warn: Rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:44:02 info: Task completed for user 123 at 25/8/2024, 5:44:02 pm
+2024-08-25 17:44:02 warn: Rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:44:03 info: Task completed for user 123 at 25/8/2024, 5:44:03 pm
+2024-08-25 17:44:04 info: Task completed for user 123 at 25/8/2024, 5:44:04 pm
+2024-08-25 17:44:05 warn: Rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:44:06 info: Task completed for user 123 at 25/8/2024, 5:44:06 pm
+2024-08-25 17:44:07 warn: Rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:44:07 info: Task completed for user 123 at 25/8/2024, 5:44:07 pm
+2024-08-25 17:44:08 warn: Rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:44:09 info: Task completed for user 123 at 25/8/2024, 5:44:09 pm
+2024-08-25 17:46:26 info: Server is running on port 3000
+2024-08-25 17:47:06 info: Server is running on port 3000
+2024-08-25 17:47:09 info: Task completed for user 123 at 25/8/2024, 5:47:09 pm
+2024-08-25 17:47:28 info: Task completed for user 123 at 25/8/2024, 5:47:28 pm
+2024-08-25 17:47:29 warn: Rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:49:13 info: Task completed for user 123 at 25/8/2024, 5:49:13 pm
+2024-08-25 17:53:59 info: Server is running on port 3000
+2024-08-25 17:54:44 info: Task completed for user 123 at 25/8/2024, 5:54:44 pm
+2024-08-25 17:54:49 info: Task completed for user 123 at 25/8/2024, 5:54:49 pm
+2024-08-25 17:54:49 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:54:50 info: Task completed for user 123 at 25/8/2024, 5:54:50 pm
+2024-08-25 17:54:51 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:54:53 info: Task completed for user 123 at 25/8/2024, 5:54:53 pm
+2024-08-25 17:54:53 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:54:54 info: Task completed for user 123 at 25/8/2024, 5:54:54 pm
+2024-08-25 17:54:54 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:54:55 info: Task completed for user 123 at 25/8/2024, 5:54:55 pm
+2024-08-25 17:54:56 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:54:56 info: Task completed for user 123 at 25/8/2024, 5:54:56 pm
+2024-08-25 17:54:57 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:55:00 info: Task completed for user 123 at 25/8/2024, 5:55:00 pm
+2024-08-25 17:55:09 info: Server is running on port 3000
+2024-08-25 17:55:12 warn: Per-minute rate limit exceeded for user 123. Retry after 33 seconds.
+2024-08-25 17:55:14 warn: Per-minute rate limit exceeded for user 123. Retry after 30 seconds.
+2024-08-25 17:55:15 warn: Per-minute rate limit exceeded for user 123. Retry after 29 seconds.
+2024-08-25 17:55:17 warn: Per-minute rate limit exceeded for user 123. Retry after 27 seconds.
+2024-08-25 17:55:18 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:55:19 warn: Per-minute rate limit exceeded for user 123. Retry after 25 seconds.
+2024-08-25 17:55:20 warn: Per-minute rate limit exceeded for user 123. Retry after 24 seconds.
+2024-08-25 17:55:21 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:55:22 warn: Per-minute rate limit exceeded for user 123. Retry after 22 seconds.
+2024-08-25 17:55:24 warn: Per-minute rate limit exceeded for user 123. Retry after 20 seconds.
+2024-08-25 17:55:25 warn: Per-minute rate limit exceeded for user 123. Retry after 19 seconds.
+2024-08-25 17:55:29 warn: Per-minute rate limit exceeded for user 123. Retry after 15 seconds.
+2024-08-25 17:55:32 warn: Per-minute rate limit exceeded for user 123. Retry after 12 seconds.
+2024-08-25 17:55:35 warn: Per-minute rate limit exceeded for user 123. Retry after 9 seconds.
+2024-08-25 17:55:37 warn: Per-minute rate limit exceeded for user 123. Retry after 7 seconds.
+2024-08-25 17:55:39 warn: Per-minute rate limit exceeded for user 123. Retry after 5 seconds.
+2024-08-25 17:55:41 warn: Per-minute rate limit exceeded for user 123. Retry after 4 seconds.
+2024-08-25 17:55:42 warn: Per-minute rate limit exceeded for user 123. Retry after 3 seconds.
+2024-08-25 17:55:43 warn: Per-minute rate limit exceeded for user 123. Retry after 2 seconds.
+2024-08-25 17:55:44 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:55:45 warn: Per-minute rate limit exceeded for user 123. Retry after 1 seconds.
+2024-08-25 17:55:46 info: Task completed for user 123 at 25/8/2024, 5:55:46 pm
+2024-08-25 17:55:47 info: Task completed for user 123 at 25/8/2024, 5:55:47 pm
+2024-08-25 17:55:48 warn: Per-minute rate limit exceeded for user 123. Retry after 58 seconds.
+2024-08-25 17:55:49 warn: Per-minute rate limit exceeded for user 123. Retry after 56 seconds.
