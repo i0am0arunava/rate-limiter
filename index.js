@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 import express from "express";
 import { Redis } from "ioredis";
 import { RateLimiterRedis } from "rate-limiter-flexible";
@@ -5,6 +6,10 @@ import winston, { format, transports } from "winston";
 import { Queue, Worker } from "bullmq"; // Ensure this import is correct
 
 const app = express();
+dotenv.config({
+  path: "./.env",
+});
+
 app.use(express.json({ limit: "16kb" }));
 
 // Set up winston logger
@@ -23,14 +28,11 @@ const logger = winston.createLogger({
 });
 
 // Connect to Redis
-const redisClient = new Redis(
-  "rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com:6379",
-  {
-    tls: true, // Enable TLS/SSL for secure connection
-    enableOfflineQueue: false,
-    maxRetriesPerRequest: null, // Set this to null
-  }
-);
+const redisClient = new Redis(process.env.REDIS_DB_URL, {
+  tls: true, // Enable TLS/SSL for secure connection
+  enableOfflineQueue: false,
+  maxRetriesPerRequest: null, // Set this to null
+});
 
 redisClient.on("error", (err) => {
   logger.error(`Redis connection error: ${err}`);

@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "bullmq": "^5.12.10",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "ioredis": "^5.4.1",
     "nodemon": "^3.1.4",
