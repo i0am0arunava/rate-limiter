@@ -2,6 +2,7 @@ import express from "express";
 import { Redis } from "ioredis";
 import { RateLimiterRedis } from "rate-limiter-flexible";
 import winston, { format, transports } from "winston";
+import { Queue, Worker } from "bullmq"; // Ensure this import is correct
 
 const app = express();
 app.use(express.json({ limit: "16kb" }));
@@ -21,15 +22,16 @@ const logger = winston.createLogger({
   ],
 });
 
-// Connect to Redis (adjust port if needed)
+// Connect to Redis
 const redisClient = new Redis({
-  host: "127.0.0.1", // Localhost, adjust if needed
-  port: 6379, // Default Redis port, adjust if Docker is mapping differently
+  host: "127.0.0.1",
+  port: 6379,
   enableOfflineQueue: false,
+  maxRetriesPerRequest: null, // Set this to null
 });
 
 redisClient.on("error", (err) => {
-  logger.error(`Redis connection error: ${err}`); // Use winston for logging errors
+  logger.error(`Redis connection error: ${err}`);
 });
 
 // Rate limit per second
@@ -50,62 +52,66 @@ const rpmLimiter = new RateLimiterRedis({
   keyPrefix: "rpm",
 });
 
-// Rate limiting middleware
+// Task Queue
+const taskQueue = new Queue("task-queue", {
+  connection: redisClient,
+});
+
+// Task Worker
+new Worker(
+  "task-queue",
+  async (job) => {
+    const { user_id } = job.data;
+    await task(user_id);
+  },
+  {
+    connection: redisClient,
+  }
+);
+
+// Rate limiting middleware with queueing
 const rateLimiterMiddleware = async (req, res, next) => {
   const { user_id } = req.body;
 
   try {
-    // Consume a point from the rate limiter per second
     await rpsLimiter.consume(user_id);
-
-    // Consume a point from the rate limiter per minute
     await rpmLimiter.consume(user_id);
-
-    // If both limiters succeed, proceed to the next middleware or route handler
     next();
   } catch (rejRes) {
     if (rejRes instanceof Error) {
-      // Log Redis or rate limiter error
       logger.error(`Rate limiter Redis error: ${rejRes}`);
       res.status(500).json({ msg: "Internal Server Error" });
     } else {
-      // Handle rate limit exceeded scenario
       const secs = Math.round(rejRes.msBeforeNext / 1000) || 1;
+      logger.warn(
+        `Rate limit exceeded for user ${user_id}. Queuing task. Retry after ${secs} seconds.`
+      );
 
-      // Determine which limiter was exceeded and set the Retry-After header
-      if (rejRes.consumedPoints <= 1) {
-        res.set("Retry-After", String(secs));
-        logger.warn(
-          `Per-second rate limit exceeded for user ${user_id}. Retry after ${secs} seconds.`
-        );
-      } else {
-        res.set("Retry-After", String(secs));
-        logger.warn(
-          `Per-minute rate limit exceeded for user ${user_id}. Retry after ${secs} seconds.`
-        );
-      }
-
-      res.status(429).json({ msg: "Too Many Requests" });
+      // Add the task to the queue
+      await taskQueue.add("process-task", { user_id });
+      res.set("Retry-After", String(secs));
+      res.status(202).json({ msg: "Task queued due to rate limit." });
     }
   }
 };
+
+// Task function
+async function task(user_id) {
+  logger.info(
+    `Task completed for user ${user_id} at ${new Date().toLocaleString()}`
+  );
+}
 
 // Express route
 app.post("/api/v1/task", rateLimiterMiddleware, (req, res) => {
   const { user_id } = req.body;
 
-  async function task(user_id) {
-    // Log task completion with a readable timestamp
-    logger.info(
-      `Task completed for user ${user_id} at ${new Date().toLocaleString()}`
-    );
-  }
-
-  task(user_id);
-  res.send("Hello World");
+  // Process the task immediately if within rate limit
+  taskQueue.add("process-task", { user_id });
+  res.send("Task is being processed");
 });
 
 // Start server
 app.listen(3000, () => {
-  logger.info("Server is running on port 3000");
+  logger.info(`Server is running on port 3000`);
 });

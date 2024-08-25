@@ -62,3 +62,18 @@
 2024-08-25 17:55:47 info: Task completed for user 123 at 25/8/2024, 5:55:47 pm
 2024-08-25 17:55:48 warn: Per-minute rate limit exceeded for user 123. Retry after 58 seconds.
 2024-08-25 17:55:49 warn: Per-minute rate limit exceeded for user 123. Retry after 56 seconds.
+2024-08-25 17:55:55 info: Server is running on port 3000
+2024-08-25 18:16:51 info: Server is running on port 3000
+2024-08-25 18:16:54 info: Task completed for user 123 at 25/8/2024, 6:16:54 pm
+2024-08-25 18:17:00 info: Task completed for user 123 at 25/8/2024, 6:17:00 pm
+2024-08-25 18:17:01 warn: Rate limit exceeded for user 123. Queuing task. Retry after 1 seconds.
+2024-08-25 18:17:01 info: Task completed for user 123 at 25/8/2024, 6:17:01 pm
+2024-08-25 18:17:11 info: Task completed for user 123 at 25/8/2024, 6:17:11 pm
+2024-08-25 18:17:24 info: Task completed for user 123 at 25/8/2024, 6:17:24 pm
+2024-08-25 18:17:25 warn: Rate limit exceeded for user 123. Queuing task. Retry after 1 seconds.
+2024-08-25 18:17:25 info: Task completed for user 123 at 25/8/2024, 6:17:25 pm
+2024-08-25 18:17:26 info: Task completed for user 123 at 25/8/2024, 6:17:26 pm
+2024-08-25 18:17:41 info: Task completed for user 123 at 25/8/2024, 6:17:41 pm
+2024-08-25 18:17:43 info: Task completed for user 123 at 25/8/2024, 6:17:43 pm
+2024-08-25 18:17:44 warn: Rate limit exceeded for user 123. Queuing task. Retry after 1 seconds.
+2024-08-25 18:17:44 info: Task completed for user 123 at 25/8/2024, 6:17:44 pm
