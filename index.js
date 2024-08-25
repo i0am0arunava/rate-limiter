@@ -117,5 +117,5 @@ app.post("/api/v1/task", rateLimiterMiddleware, (req, res) => {
 
 // Start server
 app.listen(process.env.PORT || 3000, () => {
-  logger.info(`Server is running on port 3000`);
+  logger.info(`Server is running on port 3000 || ${process.env.PORT}`);
 });
