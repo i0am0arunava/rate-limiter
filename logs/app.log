@@ -77,3 +77,90 @@
 2024-08-25 18:17:43 info: Task completed for user 123 at 25/8/2024, 6:17:43 pm
 2024-08-25 18:17:44 warn: Rate limit exceeded for user 123. Queuing task. Retry after 1 seconds.
 2024-08-25 18:17:44 info: Task completed for user 123 at 25/8/2024, 6:17:44 pm
+2024-08-25 19:11:16 info: Server is running on port 3000
+2024-08-25 19:11:50 info: Task completed for user 123 at 25/8/2024, 7:11:50 pm
+2024-08-25 19:11:51 info: Task completed for user 123 at 25/8/2024, 7:11:51 pm
+2024-08-25 19:11:52 warn: Rate limit exceeded for user 123. Queuing task. Retry after 1 seconds.
+2024-08-25 19:11:52 info: Task completed for user 123 at 25/8/2024, 7:11:52 pm
+2024-08-25 19:11:53 info: Task completed for user 123 at 25/8/2024, 7:11:53 pm
+2024-08-25 19:11:58 info: Task completed for user 128 at 25/8/2024, 7:11:58 pm
+2024-08-25 19:11:59 warn: Rate limit exceeded for user 128. Queuing task. Retry after 1 seconds.
+2024-08-25 19:11:59 info: Task completed for user 128 at 25/8/2024, 7:11:59 pm
+2024-08-25 19:12:00 info: Task completed for user 128 at 25/8/2024, 7:12:00 pm
+2024-08-25 19:12:14 info: Server is running on port 3000
+2024-08-25 19:12:17 info: Task completed for user 128 at 25/8/2024, 7:12:17 pm
+2024-08-25 19:12:18 warn: Rate limit exceeded for user 128. Queuing task. Retry after 1 seconds.
+2024-08-25 19:12:18 info: Task completed for user 128 at 25/8/2024, 7:12:18 pm
+2024-08-25 19:12:19 info: Task completed for user 128 at 25/8/2024, 7:12:19 pm
+2024-08-25 19:12:21 info: Task completed for user 128 at 25/8/2024, 7:12:21 pm
+2024-08-25 19:12:22 warn: Rate limit exceeded for user 128. Queuing task. Retry after 36 seconds.
+2024-08-25 19:12:22 info: Task completed for user 128 at 25/8/2024, 7:12:22 pm
+2024-08-25 19:12:23 warn: Rate limit exceeded for user 128. Queuing task. Retry after 1 seconds.
+2024-08-25 19:12:23 info: Task completed for user 128 at 25/8/2024, 7:12:23 pm
+2024-08-25 19:12:24 warn: Rate limit exceeded for user 128. Queuing task. Retry after 34 seconds.
+2024-08-25 19:12:24 info: Task completed for user 128 at 25/8/2024, 7:12:24 pm
+2024-08-25 19:12:26 warn: Rate limit exceeded for user 128. Queuing task. Retry after 33 seconds.
+2024-08-25 19:12:26 info: Task completed for user 128 at 25/8/2024, 7:12:26 pm
+2024-08-25 19:12:31 info: Task completed for user 123 at 25/8/2024, 7:12:31 pm
+2024-08-25 19:12:32 info: Task completed for user 123 at 25/8/2024, 7:12:32 pm
+2024-08-25 19:12:33 warn: Rate limit exceeded for user 123. Queuing task. Retry after 1 seconds.
+2024-08-25 19:12:33 info: Task completed for user 123 at 25/8/2024, 7:12:33 pm
+2024-08-25 19:12:34 warn: Rate limit exceeded for user 123. Queuing task. Retry after 15 seconds.
+2024-08-25 19:12:34 info: Task completed for user 123 at 25/8/2024, 7:12:34 pm
+2024-08-25 19:12:35 warn: Rate limit exceeded for user 123. Queuing task. Retry after 14 seconds.
+2024-08-25 19:12:35 info: Task completed for user 123 at 25/8/2024, 7:12:35 pm
+2024-08-25 19:13:09 info: Server is running on port 3000
+2024-08-25 19:22:10 info: Server is running on port 3000
+2024-08-25 19:22:10 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:10 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:10 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:10 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:10 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:11 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:11 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:11 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:12 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:12 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com
+2024-08-25 19:22:35 info: Server is running on port 3000
+2024-08-25 19:22:35 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com:6379
+2024-08-25 19:22:35 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com:6379
+2024-08-25 19:22:35 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com:6379
+2024-08-25 19:22:35 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com:6379
+2024-08-25 19:22:35 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com:6379
+2024-08-25 19:22:36 error: Redis connection error: Error: getaddrinfo EAI_FAIL rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com:6379
+2024-08-25 19:25:35 info: Server is running on port 3000
+2024-08-25 19:25:36 error: Redis connection error: ReplyError: Protocol error: invalid auth arguments
+2024-08-25 19:25:37 error: Redis connection error: Error: read ECONNRESET
+2024-08-25 19:25:38 error: Redis connection error: ReplyError: Protocol error: invalid auth arguments
+2024-08-25 19:25:39 error: Redis connection error: Error: read ECONNRESET
+2024-08-25 19:28:32 info: Server is running on port 3000
+2024-08-25 19:28:50 info: Task completed for user 123 at 25/8/2024, 7:28:50 pm
+2024-08-25 19:28:52 info: Task completed for user 123 at 25/8/2024, 7:28:52 pm
+2024-08-25 19:28:55 info: Task completed for user 123 at 25/8/2024, 7:28:55 pm
+2024-08-25 19:28:56 info: Task completed for user 123 at 25/8/2024, 7:28:56 pm
+2024-08-25 19:29:09 warn: Rate limit exceeded for user 123. Queuing task. Retry after 1 seconds.
+2024-08-25 19:29:16 info: Task completed for user 123 at 25/8/2024, 7:29:16 pm
+2024-08-25 19:29:17 info: Task completed for user 123 at 25/8/2024, 7:29:17 pm
+2024-08-25 19:29:17 info: Task completed for user 123 at 25/8/2024, 7:29:17 pm
+2024-08-25 19:29:17 info: Task completed for user 123 at 25/8/2024, 7:29:17 pm
+2024-08-25 19:29:17 info: Task completed for user 123 at 25/8/2024, 7:29:17 pm
+2024-08-25 19:29:18 info: Task completed for user 123 at 25/8/2024, 7:29:18 pm
+2024-08-25 19:29:19 info: Task completed for user 123 at 25/8/2024, 7:29:19 pm
+2024-08-25 19:29:20 info: Task completed for user 123 at 25/8/2024, 7:29:20 pm
+2024-08-25 19:29:21 info: Task completed for user 123 at 25/8/2024, 7:29:21 pm
+2024-08-25 19:29:23 info: Task completed for user 123 at 25/8/2024, 7:29:23 pm
+2024-08-25 19:29:24 info: Task completed for user 123 at 25/8/2024, 7:29:24 pm
+2024-08-25 19:29:26 info: Task completed for user 123 at 25/8/2024, 7:29:26 pm
+2024-08-25 19:29:30 warn: Rate limit exceeded for user 123. Queuing task. Retry after 1 seconds.
+2024-08-25 19:29:30 info: Task completed for user 123 at 25/8/2024, 7:29:30 pm
+2024-08-25 19:29:31 info: Task completed for user 123 at 25/8/2024, 7:29:31 pm
+2024-08-25 19:29:32 info: Task completed for user 123 at 25/8/2024, 7:29:32 pm
+2024-08-25 19:29:39 info: Server is running on port 3000
+2024-08-25 19:29:40 info: Server is running on port 3000
+2024-08-25 19:29:42 warn: Rate limit exceeded for user 123. Queuing task. Retry after 7 seconds.
+2024-08-25 19:29:45 warn: Rate limit exceeded for user 123. Queuing task. Retry after 4 seconds.
+2024-08-25 19:29:46 info: Task completed for user 123 at 25/8/2024, 7:29:46 pm
+2024-08-25 19:29:47 info: Task completed for user 123 at 25/8/2024, 7:29:47 pm
+2024-08-25 19:29:47 warn: Rate limit exceeded for user 123. Queuing task. Retry after 2 seconds.
+2024-08-25 19:29:47 info: Task completed for user 123 at 25/8/2024, 7:29:47 pm
+2024-08-25 19:29:53 info: Server is running on port 3000

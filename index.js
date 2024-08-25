@@ -23,12 +23,14 @@ const logger = winston.createLogger({
 });
 
 // Connect to Redis
-const redisClient = new Redis({
-  host: "127.0.0.1",
-  port: 6379,
-  enableOfflineQueue: false,
-  maxRetriesPerRequest: null, // Set this to null
-});
+const redisClient = new Redis(
+  "rediss://red-cr5jcht2ng1s73ef94b0:FSxtzRb06zMeMT94dSBYKMySwg6ADypS@oregon-redis.render.com:6379",
+  {
+    tls: true, // Enable TLS/SSL for secure connection
+    enableOfflineQueue: false,
+    maxRetriesPerRequest: null, // Set this to null
+  }
+);
 
 redisClient.on("error", (err) => {
   logger.error(`Redis connection error: ${err}`);
