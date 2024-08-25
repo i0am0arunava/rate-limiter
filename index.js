@@ -3,7 +3,7 @@ import express from "express";
 import { Redis } from "ioredis";
 import { RateLimiterRedis } from "rate-limiter-flexible";
 import winston, { format, transports } from "winston";
-import { Queue, Worker } from "bullmq"; // Ensure this import is correct
+import { Queue, Worker } from "bullmq";
 
 const app = express();
 dotenv.config({
@@ -29,9 +29,9 @@ const logger = winston.createLogger({
 
 // Connect to Redis
 const redisClient = new Redis(process.env.REDIS_DB_URL, {
-  tls: true, // Enable TLS/SSL for secure connection
+  tls: true, // Enabled TLS/SSL for secure connection
   enableOfflineQueue: false,
-  maxRetriesPerRequest: null, // Set this to null
+  maxRetriesPerRequest: null,
 });
 
 redisClient.on("error", (err) => {
